@@ -1,0 +1,380 @@
+html {
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+/* header-section */
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 5,3125rem;
+    background-color: white;
+}
+
+header nav.mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+header nav.mobile li {
+    display: inline-block;
+}
+
+header nav.mobile li:last-child{
+    color: white !important;
+    background-color: #9dc20a;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+header nav.desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875rem;
+}
+
+header nav.desktop ul li {
+    display: inline-block;
+}
+
+ul.left-navbar li {
+    padding-left: 1.5rem;
+}
+
+ul.left-navbar li:last-child {
+    padding-left: 0.3rem;
+}
+
+header nav ul li.additional-for-tablet {
+    display: none;
+}
+
+header nav ul li.additional-for-tablet a {
+    color: white !important;
+    background-color: #9dc20a;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+nav.desktop ul.right-navbar li a{
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-family: Roboto-Mono-Regular;
+}
+
+nav.desktop ul.left-navbar li a{
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-family: Roboro-Regular;
+}
+/* join-section */
+section.join {
+    height: 50rem;
+    background-image: url(./resources/images/banner-landingpage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section.join div.sign-up {
+    position: relative;
+    top: 270px;
+    left: 10%;
+    width: fit-content;
+    background-color: #9dc20a;
+    color: white;
+    border: 1px solid #979797;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.sign-up div.content-header h1 {
+    font-size: 3.125rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.sign-up div.content-header h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.sign-up div.content-header {
+    margin: 0 auto;
+    padding: 2em 5rem 0.75rem 5rem;
+}
+
+div.sign-up div.content-email {
+    margin: 1rem auto;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 408px;
+    height: 64px;
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 4px;
+    margin: 1.625rem auto 3.5rem auto;
+}
+/* feature-section */
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 4rem 5%;
+}
+
+.feature {
+    padding: 2rem;
+    margin: 0px 1.25rem;
+    background-color: white;
+    /* flex: 1; */
+}
+
+.center {
+    text-align: center;
+}
+
+.feature .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 90%;
+}
+
+.feature .content {
+    padding: 2.5rem 0;
+}
+
+.feature h2 {
+    padding-bottom: 5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.feature h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+/* Filters-section */
+.filters-section {
+    padding: 4rem 0;
+    background-color: #4a4a4a;
+}
+
+.filters-section .content {
+    margin-bottom: 5rem;
+}
+
+.filters-section .content h2 {
+    color: white;
+    opacity: 100%;
+    font-size: 2.25rem;
+}
+
+.filters-section .content h3 {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.images-container {
+    padding: 0 1%;
+    display: flex;
+    /* max-width: 100%; */
+}
+
+.images-container .image-container {
+    overflow: hidden;
+}
+
+.images-container .image-container img {
+    display: block;
+    max-width: 100%;
+}
+/* quotes-section */
+.quotes-section {
+    background-color: #f3f3f3;
+}
+
+.quotes-section .content {
+    padding: 5rem 0;
+}
+
+.quotes-section .content span {
+    color: #4a4a4a;
+    font-size: 1.875rem;
+    font-style: italic;
+    line-height: 1.1;
+    padding-right: 1.875rem;
+}
+
+/* footer-section */
+footer {
+    background-color: #9b9b9b;
+    /* height: 3.875rem; */
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 2rem;
+    padding: 1.8rem 0;
+}
+
+footer .content span {
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 1025px){
+    header nav ul li.additional-for-tablet {
+        display: unset;
+    }
+
+    section.join div.sign-up {
+        background-color: transparent;
+        border: none;
+    }
+
+    div.sign-up div.content-email {
+        display: none;
+    }
+
+    section.join {
+        height: 40rem;
+    }
+
+    section.join div.sign-up {
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 8px;
+    }
+
+    header nav.desktop {
+        display: none;
+    }
+
+    header nav.mobile {
+        display: flex;
+    }
+
+    section.join {
+        background-position: right;
+    }
+
+    section.join div.sign-up {
+        top: 130px;
+    }
+
+    .features-section {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .feature {
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    .feature .image-container {
+        max-width: 100%;
+    }
+
+    .feature .image-container img {
+        max-width: 100%;
+    }
+
+    .feature h3 {
+        font-size: 2rem;
+        line-height: 1.4;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .feature h2 {
+        font-size: 2.25rem;
+        padding-bottom: 1rem;
+    }
+
+    .feature .content {
+        padding-bottom: 0;
+    }
+
+    .feature .content-2  h3 {
+        font-size: 1.75rem;
+    }
+
+    .filters-section .images-container .hidden-image{
+        display: none;
+    }
+
+    .filters-section  {
+        padding-bottom: 0;
+    }
+
+    .filters-section .content h3 {
+        font-size: 2rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .filters-section .content {
+        margin-bottom: 2rem;
+    }
+
+    .quotes-section .content .quote{
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+
+    .quotes-section .content img {
+        display: block;
+        margin: auto;
+        padding-top: 2rem;
+    }
+
+    .quotes-section .content {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer .content span {
+        font-size: 1.25rem;
+    }
+
+}
