@@ -83,7 +83,7 @@ nav.desktop ul.left-navbar li a{
 /* join-section */
 section.join {
     height: 50rem;
-    background-image: url(./resources/images/banner-landingpage.jpg);
+    background-image: url(./banner-landingpage.jpg);
     background-size: cover;
     background-position: center;
 }
